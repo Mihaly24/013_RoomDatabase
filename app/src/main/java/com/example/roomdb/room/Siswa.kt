@@ -1,2 +1,9 @@
 package com.example.roomdb.room
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity (tableName = "tblSiswa")
+data class Siswa(
+    @PrimaryKey(autoGenerate = true)
+)
