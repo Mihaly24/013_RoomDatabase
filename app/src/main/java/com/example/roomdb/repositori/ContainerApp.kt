@@ -15,3 +15,11 @@ class ContainerDataApp(private val context: Context):
             DatabaseSiswa.getDatabase(context).siswaDao())
         }
     }
+
+class AplikasiSiswa : Application() {
+    /**
+     * AppContainer interface hanya digunakan kelas kelas lainnya untuk mendapatkan dependensi
+     */
+
+
+}
