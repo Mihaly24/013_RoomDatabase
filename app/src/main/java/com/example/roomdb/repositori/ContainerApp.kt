@@ -21,5 +21,10 @@ class AplikasiSiswa : Application() {
      * AppContainer interface hanya digunakan kelas kelas lainnya untuk mendapatkan dependensi
      */
 
+    lateinit var container: ContainerApp
 
+    override fun onCreate() {
+        super.onCreate()
+        container = ContainerDataApp(this)
+    }
 }
