@@ -8,7 +8,7 @@ Screenshot setelah data ditambahkan: <img width="434" height="805" alt="image" s
 
 Screenshot detail data: <img width="404" height="801" alt="image" src="https://github.com/user-attachments/assets/d9614a7c-b2cc-4a7b-a300-611b940776b4" />
 
-Screenshot halaman edit sebelum: <img width="417" height="819" alt="image" src="https://github.com/user-attachments/assets/2b4d8f35-d7c8-4dee-9a34-360ac681fc30" />
+Screenshot halaman edit: <img width="417" height="819" alt="image" src="https://github.com/user-attachments/assets/2b4d8f35-d7c8-4dee-9a34-360ac681fc30" />
 
 Screenshot detial data SETELAH di edit: <img width="427" height="805" alt="image" src="https://github.com/user-attachments/assets/bb5adfbb-554b-4aee-b484-19e721f2e798" />
 
