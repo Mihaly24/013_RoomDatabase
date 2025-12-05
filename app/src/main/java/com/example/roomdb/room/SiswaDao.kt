@@ -15,8 +15,7 @@ interface SiswaDao {
     fun getAllSiswa(): Flow<List<Siswa>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(siswa: Siswa
-    )
+    suspend fun insert(siswa: Siswa)
 
     // menambah 3 fungsi
     @Query("SELECT * from tblSiswa WHERE id = :id")
