@@ -10,6 +10,7 @@ interface RepositoriSiswa{
     //edit nambah 3 fungsi
     fun getSiswaStream(id: Int): Flow<Siswa?>
     suspend fun deleteSiswa(siswa: Siswa)
+    suspend fun updateSiswa(siswa: Siswa)
 }
 
 class OfflineRepositoriSiswa(
