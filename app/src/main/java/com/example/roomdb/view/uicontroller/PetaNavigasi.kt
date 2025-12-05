@@ -3,11 +3,16 @@ package com.example.roomdb.view.uicontroller
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.example.roomdb.view.DetailSiswaScreen
 import com.example.roomdb.view.EntrySiswaScreen
 import com.example.roomdb.view.HomeScreen
+import com.example.roomdb.view.route.DestinasiDetailSiswa
+import com.example.roomdb.view.route.DestinasiDetailSiswa.itemIdArg
 import com.example.roomdb.view.route.DestinasiEntry
 import com.example.roomdb.view.route.DestinasiHome
 
@@ -30,6 +35,16 @@ fun HostNavigasi(navController: NavHostController,
         }
         composable(DestinasiEntry.route) {
             EntrySiswaScreen(navigateBack = { navController.popBackStack() })
+        }
+
+        composable(route = DestinasiDetailSiswa.routeWithArgs,
+            arguments = listOf(navArgument(itemIdArg) {
+                type = NavType.IntType
+            })
+        ) {
+            DetailSiswaScreen(
+                //navigateToEditItem = { navController.navigate("${DestinasiEntry.route}/$it") },
+                navigateBack = { navController.navigateUp() })
         }
     }
 
